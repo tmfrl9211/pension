@@ -1,0 +1,17 @@
+게시판 추가만들기
+
+테이블명 : test_board
+
+입력받는 값  => 테이블 추가 : id, rnum, writeday
+이름
+제목
+내용
+이메일
+성별 (남,녀 radio)
+음식 (음식을 8개정도 checkbox로 만들기)
+주소 (select태그를 이용하여)
+      <option> 선택 </option> 
+      <option value=1> 서울시 </option>
+      <option value=2> 경기도 </option>
+      
+      g

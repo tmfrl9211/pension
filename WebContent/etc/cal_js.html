@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>  <!-- cal_js.html -->
+  <meta charset="UTF-8">
+  <title>자바스크립트 달력</title>
+  <script>
+   // 달력을 만들기 위해 필요한 값 => 월의 총일수, 1일의 요일
+   var today=new Date(2017,4,1);  
+  // alert("년도 : "+today.getFullYear()); // 4자리 년도
+  // alert("월 : "+today.getMonth());      // 월 => 0~11까지의 값
+  // alert("일 : "+today.getDate());       // 일
+  // alert("요일 : "+today.getDay());      // 요일 => 0~6 (일:0)
+
+   // 총일수
+   var mon=[31,28,31,30,31,30,31,31,30,31,30,31];
+
+   var aday=new Date(500,1,1);
+   var yoil=aday.getDay(); // 1일의 요일
+   alert("1일의 요일 : "+yoil);
+   var yy=aday.getFullYear();
+    // 년도%4=>0  년도%100 =>0인거는 제외 , 년도%400 => 0
+   if((yy%4==0 && yy%100!=0) || yy%400==0) 
+     var chong=mon[1]+1;  // aday.getMonth()
+   else
+     var chong=mon[1];
+
+   alert("총일수 "+chong);
+
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
